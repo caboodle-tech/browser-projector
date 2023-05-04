@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Projector</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/browser-projector.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.11.1/sass.sync.min.js"></script>
+</head>
+<body>
+    <div id="bp-screen">
+        <div id="bp-selectors">
+            Microphone:
+            <select id="bp-audio-selector">
+                <option value=""></option>
+            </select>
+            Video:
+            <select id="bp-video-selector">
+                <option value=""></option>
+            </select>
+            <button id="bp-choose-selections">Turn on Projector</button>
+        </div>
+        <video id="bp-stream" playsinline autoplay loop></video>
+    </div>
+</body>
+</html>
